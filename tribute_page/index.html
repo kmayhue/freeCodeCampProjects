@@ -6,19 +6,47 @@
     text-align: center;
     display: block;
   }
+  main {
+    display: grid;
+    background: LightGray;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto 5fr;
+    grid-gap: 10px;
+    grid-template-areas:
+      "header header"
+      "image content";
+  }
+  #header {
+    grid-area: header;
+  }
+  #img-div {
+    grid-area: image;
+  }
+  #tribute-info {
+    grid-area: content;
+
+  }
+
+  ul {
+    list-style-type:decimal;
+
+  }
 
   </style>
   <head> </head>
   <body>
   <main id="main">
-    <h1 id="title">Mac Miller</h1>
-    <p>A tribute to a phenomenal musician</p>
+    <div id="header">
+      <h1 id="title">Mac Miller</h1>
+      <p>Mac Miller's discography</p>
+    </div>
     <div id="img-div">
       <img id="image" src="https://www.rollingstone.com/wp-content/uploads/2018/11/Mac-Miller-Cover-of-Billy-Prestons-Nothing-From-Nothing-spotify.jpg" alt="Mac Miller singing">
       <div id="img-caption">Mac Miller singing on stage</div>
     </div>
-    <p id="tribute-info">
-      Mac Miller released the following albums throughout his music career.<br>
+    <div id="tribute-info">
+    <p>
+      Mac Miller released the following albums throughout his music career:<br>
       <ul>
         <li><a target=_blank target=_blank href="https://teaandweed.com/mac-miller-discography-mixtapes-albums-singles-features/#the-jukebox-prelude-to-class-clown">The Jukebox: Prelude to Class Clown</a></li>
         <li><a target=_blank href="https://teaandweed.com/mac-miller-discography-mixtapes-albums-singles-features/#but-my-mackin-aint-easy">But My Mackin’ Ain’t Easy</a></li>
@@ -40,12 +68,12 @@
         <li><a target=_blank href="https://teaandweed.com/mac-miller-discography-mixtapes-albums-singles-features/#the-divine-feminine">The Divine Feminine</a></li>
         <li><a target=_blank href="https://teaandweed.com/mac-miller-discography-mixtapes-albums-singles-features/#swimming">Swimming</a></li>
         <li><a target=_blank href="https://teaandweed.com/mac-miller-discography-mixtapes-albums-singles-features/#circles">Circles</a></li>
-        <li><a target=_blank href="https://teaandweed.com/mac-miller-discography-mixtapes-albums-singles-features/#faces">Faces</a></li>
       </ul>
     </p>
     <p>
     Learn more about Mac Miller on his <a id="tribute-link" target=_blank href="https://en.wikipedia.org/wiki/Mac_Miller" target=_blank >Wikipedia page</a>
     </p>
+    </div>
 
   </main>
   </body>
