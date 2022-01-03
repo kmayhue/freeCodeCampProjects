@@ -13,7 +13,7 @@
 }
 html {
 
-  background-color: 0D0A0E;
+  background-color: #0D0A0E;
 
 }
 main {
@@ -41,6 +41,9 @@ main {
   overflow-y: auto;
   padding-right: 10%;
   padding-top: 5%;
+  color: white;
+  text-align: center;
+  font-size: 150%;
 
 }
 #header {
@@ -56,4 +59,9 @@ main {
 
 #album-art {
     width: 100%;
+}
+
+ul {
+ list-style: none;
+ padding: 0;
 }
