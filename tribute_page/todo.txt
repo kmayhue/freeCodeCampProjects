@@ -1,0 +1,5 @@
+V2 todos (tribute page version 2)
+1. Add Spotify API
+2. Add mobile responsiveness
+3. The background color does not match the left side of the image
+4. On big screens, the 
